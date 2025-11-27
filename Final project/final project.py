@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# READ CSV
+
 df = pd.read_csv("air.csv")
 df["DateTime"] = pd.to_datetime(df["DateTime"])
 df = df.set_index("DateTime")
@@ -69,3 +69,4 @@ plt.title("NO2 Over Time")
 plt.xlabel("Date")
 plt.ylabel("NO2")
 plt.grid()
+
